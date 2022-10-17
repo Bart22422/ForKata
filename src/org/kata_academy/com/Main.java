@@ -10,21 +10,17 @@ public class Main {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Введи выражение целиком с оператором: '+', '-', '*','/'");
 
-		for (int i = 0; i < 10; i++) {
-			String num = RomanNum.values()[i].getTitle();
-			char ch = '*';
-			String secondNum = null;
-			for (int k = 0; k < 10; k++) {
-				secondNum = RomanNum.values()[k].getTitle();
-				System.out.println(num + ch + secondNum);
-				String string = num + ch + secondNum;
-				calc(string);
-			}
-		}
+		/*
+		 * Для проверки умножения римских чисел for (int i = 0; i < 10; i++) { String
+		 * num = RomanNum.values()[i].getTitle(); char ch = '*'; String secondNum =
+		 * null; for (int k = 0; k < 10; k++) { secondNum =
+		 * RomanNum.values()[k].getTitle(); System.out.println(num + ch + secondNum);
+		 * String string = num + ch + secondNum; calc(string); } }
+		 */
 
-		// String input = scanner.nextLine();
+		String input = scanner.nextLine();
 
-		// calc(input);
+		calc(input);
 
 	}
 
